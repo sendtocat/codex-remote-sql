@@ -1,0 +1,57 @@
+[
+  {
+    "path": "LICENSE",
+    "bytes": 1086,
+    "sha256": "1ddbecf6cdf1a8bf00f312636004c6d6ede58ffe04e1ac76f2e43073d5cfd840"
+  },
+  {
+    "path": "README_JA.md",
+    "bytes": 1191,
+    "sha256": "4ea2e070c13e384e95fa05bbffe580936342cc2b56ca4a83e7e0e6ae9e6b9042"
+  },
+  {
+    "path": "examples/targets.example.cfg",
+    "bytes": 385,
+    "sha256": "04eef531d86d3f0fbb49d194545ad609f7c6953f59eaf98f0f7885f076a01206"
+  },
+  {
+    "path": "powershell/CodexSqlEvidence.psm1",
+    "bytes": 5466,
+    "sha256": "2dbb456df194f5aa0139351b9e011024cb3db9c1cffba27ab16a11f552a95bef"
+  },
+  {
+    "path": "powershell/Write-CodexCsv.ps1",
+    "bytes": 633,
+    "sha256": "bd9b1f1ab7116097868d20d68178e6e7d20cd912f88bb23f731190af87bbeb94"
+  },
+  {
+    "path": "tests/Emit-MockCsv.ps1",
+    "bytes": 430,
+    "sha256": "fd0fd59646824e12e484a6eeea4bd4cee92a623810dc0af83b6d4f4769a16a34"
+  },
+  {
+    "path": "tests/Test-CodexSqlEvidence.ps1",
+    "bytes": 5774,
+    "sha256": "d448d24ea3eacd608f6f9be5685509e29aff8fe175cf0f7c4b6ec20e65fb2375"
+  },
+  {
+    "path": "tests/test_contracts.py",
+    "bytes": 11102,
+    "sha256": "1c0493fda14ce86a2a2a54316b1269fb7ca505fa885bf0e84e0290f06f99e223"
+  },
+  {
+    "path": "tests/test_ps5_csv_boundary.py",
+    "bytes": 1410,
+    "sha256": "aaaab3648f4325007d4999089e5928c54da9f1a56b27e5f1c159a4d632512670"
+  },
+  {
+    "path": "tools/common_contracts.py",
+    "bytes": 11179,
+    "sha256": "bce9dc7a909a4b3ea86e1055cd1b233e065cd592eca7cc13b9c3ac92ff75d7e0"
+  },
+  {
+    "path": "tools/csv_boundary.py",
+    "bytes": 881,
+    "sha256": "ec8111db345f333cff18a6a2ee03bbbc0e3bb0fcbd72e912e205f908f4a2eb7a"
+  }
+]
