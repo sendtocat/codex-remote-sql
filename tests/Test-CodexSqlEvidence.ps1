@@ -1,4 +1,5 @@
-#requires -Version 5.0
+﻿#requires -Version 5.0
+if ($PSVersionTable.PSVersion.Major -ne 5) { Write-Output 'NOT_RUN: WINDOWS_POWERSHELL_5_REQUIRED'; exit 3 }
 # Mock/local only: no SQL or SSH connection is performed.
 # Run under Windows PowerShell 5 with -NoProfile, not under an agent-wide profile.
 $ErrorActionPreference = 'Stop'

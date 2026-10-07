@@ -5,23 +5,31 @@ import sys
 from pathlib import Path
 
 root = Path(__file__).resolve().parents[1]
-if str(root) != '/mnt/c/for_agent/myssh_and_db/candidate-v0.1.1':
-    raise SystemExit('NOT_RUN: PROJECT_PATH_MISMATCH')
 exe = Path('/mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe')
 if not exe.is_file():
     raise SystemExit('NOT_RUN: WINDOWS_PS_NOT_AVAILABLE')
+try:
+    emitter = subprocess.run(['wslpath', '-w', str(root / 'tests/Emit-MockCsv.ps1')],
+                             capture_output=True, text=True, timeout=5, check=True).stdout.strip()
+except (OSError, subprocess.SubprocessError):
+    raise SystemExit('NOT_RUN: WSLPATH_UNAVAILABLE')
+# Use a Windows-local shared drive, not a UNC WSL path.
+if len(emitter) < 3 or not emitter[0].isalpha() or emitter[1:3] != ':\\':
+    raise SystemExit('NOT_RUN: WINDOWS_SHARED_DRIVE_REQUIRED')
 sys.path.insert(0, str(root / 'tools'))
 from csv_boundary import read_rows
 
 try:
     result = subprocess.run(
         [str(exe), '-NoLogo', '-NoProfile', '-NonInteractive', '-File',
-         r'C:\for_agent\myssh_and_db\candidate-v0.1.1\tests\Emit-MockCsv.ps1'],
+         emitter],
         cwd=root, capture_output=True, timeout=30, check=False)
 except subprocess.TimeoutExpired:
     raise SystemExit('FAIL: PS5_TIMEOUT')
 except OSError:
     raise SystemExit('NOT_RUN: WINDOWS_PS_LAUNCH_FAILED')
+if result.returncode == 3:
+    raise SystemExit('NOT_RUN: WINDOWS_POWERSHELL_5_REQUIRED')
 if result.returncode != 0:
     raise SystemExit('FAIL: PS5_PROCESS_FAILED')
 if result.stderr.strip():
