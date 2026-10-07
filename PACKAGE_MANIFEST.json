@@ -5,9 +5,19 @@
     "sha256": "1ddbecf6cdf1a8bf00f312636004c6d6ede58ffe04e1ac76f2e43073d5cfd840"
   },
   {
+    "path": "README.md",
+    "bytes": 3723,
+    "sha256": "094056543832b65063606ead2422c833e7d9a91f12474a19159e18a14d0fdf43"
+  },
+  {
     "path": "README_JA.md",
-    "bytes": 1191,
-    "sha256": "4ea2e070c13e384e95fa05bbffe580936342cc2b56ca4a83e7e0e6ae9e6b9042"
+    "bytes": 2298,
+    "sha256": "e263255aec8b017d521d5e30e37970634869f6e5a4bf7a24e1e5d50654ddd639"
+  },
+  {
+    "path": "docs/OFFLINE_START_JA.md",
+    "bytes": 8719,
+    "sha256": "f8795ee1c55e0cf74ec8bf3ea98acd34ff1e7c5f625c339f1487652aab0a901f"
   },
   {
     "path": "examples/targets.example.cfg",
@@ -25,14 +35,19 @@
     "sha256": "bd9b1f1ab7116097868d20d68178e6e7d20cd912f88bb23f731190af87bbeb94"
   },
   {
+    "path": "reports/RETURN_REPORT_TEMPLATE.html",
+    "bytes": 5428,
+    "sha256": "597b7584db8c1aaddbc97c005a5d35279a881c6d459cc494a0f2a3133f380390"
+  },
+  {
     "path": "tests/Emit-MockCsv.ps1",
-    "bytes": 430,
-    "sha256": "fd0fd59646824e12e484a6eeea4bd4cee92a623810dc0af83b6d4f4769a16a34"
+    "bytes": 474,
+    "sha256": "1bfc9b7bd1e79a35942609670a0ff50e1808164f4c66576c52bc910df1cfca66"
   },
   {
     "path": "tests/Test-CodexSqlEvidence.ps1",
-    "bytes": 5774,
-    "sha256": "d448d24ea3eacd608f6f9be5685509e29aff8fe175cf0f7c4b6ec20e65fb2375"
+    "bytes": 5886,
+    "sha256": "59aaf238c9bceb1b9aab3c7334f71e1403c6353a7c84d35ac0009836145d33eb"
   },
   {
     "path": "tests/test_contracts.py",
@@ -40,9 +55,14 @@
     "sha256": "1c0493fda14ce86a2a2a54316b1269fb7ca505fa885bf0e84e0290f06f99e223"
   },
   {
+    "path": "tests/test_delivery.py",
+    "bytes": 3445,
+    "sha256": "0a260603d5ed87e98b4aed4c951c0f8bc25a6a696d018a515d158cf260f8f728"
+  },
+  {
     "path": "tests/test_ps5_csv_boundary.py",
-    "bytes": 1410,
-    "sha256": "aaaab3648f4325007d4999089e5928c54da9f1a56b27e5f1c159a4d632512670"
+    "bytes": 1800,
+    "sha256": "f0d7412c71281178541d8eb3afa8b129ea9c203ed6dcfec9ec196630aec05e35"
   },
   {
     "path": "tools/common_contracts.py",
@@ -53,5 +73,15 @@
     "path": "tools/csv_boundary.py",
     "bytes": 881,
     "sha256": "ec8111db345f333cff18a6a2ee03bbbc0e3bb0fcbd72e912e205f908f4a2eb7a"
+  },
+  {
+    "path": "tools/restore_mail.py",
+    "bytes": 5430,
+    "sha256": "0e353d595f8e0ba4cabb14801bb2540e929fbd133908bfc5a95f5d86491f4586"
+  },
+  {
+    "path": "tools/verify_package.py",
+    "bytes": 1705,
+    "sha256": "3fcf9212af07d0bd3a76f3bd87dd33d02508b3a7677699a4997dda516e70b516"
   }
 ]
